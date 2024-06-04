@@ -57,19 +57,19 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Venocyber_Tech.sendMessage(Pair_Code_By_Venocyber_Tech.user.id, { text: 'VENOCYBER-MD;;;' + b64data });
 
                let VENOCYBER_MD_TEXT = `
-*_Pair Code By Venocyber Tech_*
+*_Pair_Code_By_Cod3Uchiha_*
 *_Made With 🤍_*
 
 _Don't Forget To Give Star To My Repo_`
- await Pair_Code_By_Venocyber_Tech.sendMessage(Pair_Code_By_Venocyber_Tech.user.id,{text:VENOCYBER_MD_TEXT},{quoted:session})
+ await Pair_Code_By_Cod3Uchiha.sendMessage(Pair_Code_By_Venocyber_Tech.user.id,{text:VENOCYBER_MD_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_Venocyber_Tech.ws.close();
+        await Pair_Code_By_Cod3Uchiha.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    VENOCYBER_MD_PAIR_CODE();
+                    Manjiro_Sano_md_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -80,6 +80,6 @@ _Don't Forget To Give Star To My Repo_`
          }
         }
     }
-    return await VENOCYBER_MD_PAIR_CODE()
+    return await Manjiro_Sano_md_MD_PAIR_CODE()
 });
 module.exports = router
